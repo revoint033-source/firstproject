@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <form action = "form.php" method  = "get">
-        Name: <input type  = "text" name = "name"> <br>
-        office: <input type  = "number" name = "number"><br>
+    <form action = "form.php" method  = <get>
+        Days_name: <input type  = "text" name = "days_name"> <br>
+        Temperature: <input type  = "number" name = "temperature"><br>
         <input type = "submit" >
 </form>
  <?php
-   $name  = $_GET["name"];
-   $number =  $_GET["number"] ;
-   echo "Today is $name <br>"; 
-   echo "Office starts from $number";
+   $days_name  = $_GET["days_name"];
+   $temperature=  $_GET["temperature"] ;
+   echo "Today is $days_name <br>"; 
+   echo "Today's temperature is $temperature degree";
 
  
  ?>
