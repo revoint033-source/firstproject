@@ -13,10 +13,27 @@ if (isset($_POST['submit'])) {
 }
 ?>
 
-<form method="POST">
-    Name: <input type="text" name="name"><br><br>
-    Email: <input type="email" name="email"><br><br>
-    Phone: <input type="text" name="phone"><br><br>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add User</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
 
-    <button type="submit" name="submit">Save</button>
-</form>
+<div class="container mt-5">
+    <h3>Add User</h3>
+
+    <form method="POST" class="card p-4">
+        <input type="text" name="name" class="form-control mb-3" placeholder="Name" required>
+        <input type="email" name="email" class="form-control mb-3" placeholder="Email" required>
+        <input type="text" name="phone" class="form-control mb-3" placeholder="Phone" required>
+
+        <button type="submit" name="submit" class="btn btn-success">Save</button>
+        <a href="index.php" class="btn btn-secondary">Back</a>
+    </form>
+</div>
+
+</body>
+</html>
+
